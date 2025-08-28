@@ -1,56 +1,60 @@
+# AI Study Plan
 
-# 🤖 AI Architect 1-Year Learning Plan
-
-This repository is a **structured 1-year study plan** (5–7 hrs/week) for experienced software architects who want to upskill in **AI Solution Architecture, GenAI, MLOps, and AI Governance**.  
-
----
-
-## 📅 Contents
-
-- **[`AI_Architect_1Year_Syllabus.md`](./AI_Architect_1Year_Syllabus.md)** – Weekly breakdown (syllabus with detailed tasks).  
-- **[`AI_Architect_Resources.md`](./AI_Architect_Resources.md)** – Direct links to courses, books, blogs, and tools.  
+This repository provides a **20-week roadmap** for software architects to add **AI system design and implementation skills**. It emphasizes **durable concepts** (retrieval, evaluation, security, observability, governance) over fast-changing model internals.
 
 ---
 
-## 🎯 Goal
+## 🎯 Goals
 
-By the end of this program, you will:  
-
-- Understand **core AI/ML fundamentals** (concepts + math refresh).  
-- Gain working knowledge of **NLP, LLMs, and Generative AI**.  
-- Be able to **architect AI-integrated solutions** in enterprise apps.  
-- Master **MLOps, model governance, and Azure AI services**.  
-- Stay up to date with **latest AI trends, tools, and frameworks**.  
+* Learn how to **architect applications that integrate AI** responsibly and efficiently.
+* Build **working AI features** with .NET + Azure (Python equivalents suggested).
+* Develop durable skills: **RAG, evals, observability, security, MLOps**.
 
 ---
 
-## 🗂 Suggested Workflow
+## 📅 Structure
 
-1. Clone this repo.  
-2. Each week, follow the **syllabus file** step by step.  
-3. Use the **resources file** for direct course/book/tool links.  
-4. At the end of each month, perform a **monthly review/recap**.  
-5. After 12 months, you’ll have a **portfolio of AI knowledge & POCs**.  
+The plan is divided into:
 
----
-
-## 📊 Tracking Progress
-
-You can track your weekly learning progress using Git commits or GitHub Projects:  
-
-```bash
-# Example commit message
-git commit -m "Week 6 ✅ Completed - Deep Learning Basics"
-```
-
-Or maintain a Kanban board with columns: **To Learn → In Progress → Done**.
+1. **Resources** — curated reference links ([AI\_Architect\_Resources.md](AI_Architect_Resources.md))
+2. **Progress Tracker** — week-by-week deliverables ([Progress\_Tracker.md](Progress_Tracker.md))
+3. **Syllabus** — ([AI\_Architect\_Syllabus.md](AI_Architect_Syllabus.md))
 
 ---
 
-## 🌟 Tip
+## 📘 Highlights of the 20-Week Plan
 
-This is not a rigid plan. Feel free to **adapt timelines** depending on workload, dive deeper into areas of interest (e.g., **NLP or MLOps**), or skip parts less relevant to your career goals.  
+* **Weeks 0–4**: Foundations → LLM concepts, prompt engineering, .NET chatbot
+* **Weeks 5–8**: Retrieval & RAG → hybrid vector search, chunking, first RAG API
+* **Weeks 9–12**: Evaluation & Security → Ragas/TruLens, observability, OWASP LLM
+* **Weeks 13–16**: Orchestration & Governance → multi-agent patterns, pipelines, MLOps, responsible AI
+* **Weeks 17–20**: Capstone → design doc, build, hardening, launch
 
 ---
 
-Happy Learning 🚀  
+## 📦 Capstone Options
+
+* **Enterprise RAG Service** — hybrid retrieval, evals, observability
+* **Internal AI Assistant** — summarizing DevOps/Teams updates
+* **Multi-Agent Planner/Worker System**
+* **AI DevOps Bot** — CI/CD assistant
+
+---
+
+## ⏱️ Time Commitment
+
+* 10–12 hrs/week (5–7 hrs weekdays + 4 hrs weekends)
+* Deliverables are **small but production-oriented** (checklists, demos, logs)
+
+---
+
+## 🔗 References
+
+* [AI\_Architect\_Resources.md](AI_Architect_Resources.md)
+* [Progress\_Tracker.md](Progress_Tracker.md)
+
+---
+
+## 🙌 Contributions
+
+This study plan is tailored for software architects. PRs are welcome if you find **better resources, updated links, or improved project ideas**.
