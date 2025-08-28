@@ -15,25 +15,29 @@
 * Set up: **.NET 8/9**, `Microsoft.Extensions.AI` (unified AI façade), Azure subscription.
 * Build a **console chat** app that can swap OpenAI/Azure OpenAI with minimal code changes.
 * Read **production** guidance (rate limits, retries, timeouts, backoff, streaming).
+
   **References:** Microsoft.Extensions.AI overview and API (install, IChatClient) ([Microsoft Learn][1]); .NET quickstart chat app ([Microsoft Learn][2]); OpenAI production best practices (app hardening patterns) ([OpenAI Platform][3]).
 
 ### Week 2 — Retrieval 101: Embeddings & Vector Search
 
 * Concepts: embeddings, distance metrics, **ANN indices**, hybrid vs pure vector, schema design.
 * Hands-on: **Azure AI Search** vector index; simple semantic search; compare **pgvector** on Postgres to understand tradeoffs.
-  **References:** Azure AI Search vector overview & how-to ([Microsoft Learn][4]); .NET vector samples and quickstart ([Microsoft Learn][5]); pgvector docs (overview & operations) ([GitHub][6], [Crunchy Data][7]).
+
+   **References:** Azure AI Search vector overview & how-to ([Microsoft Learn][4]); .NET vector samples and quickstart ([Microsoft Learn][5]); pgvector docs (overview & operations) ([GitHub][6], [Crunchy Data][7]).
 
 ### Week 3 — RAG End-to-End (Durable app pattern)
 
 * Build a minimal **RAG** service: ingestion → chunking → index → retrieval → grounded answers with citations.
 * Deploy in **Azure AI Foundry**; wire to your Week-2 vector store.
+
   **References:** Azure RAG concept page & step-by-step tutorial (Foundry SDK) ([Microsoft Learn][8]); “Chat with your data” .NET sample ([GitHub][9]).
 
 ### Week 4 — Evaluation & Basic Observability
 
 * Add **quality gates**: answer relevance, groundedness, context precision/recall.
 * Try **Azure RAG evaluators**; compare with **Ragas** and **TruLens**; log traces + token costs.
-  **References:** Azure RAG evaluators (groundedness, retrieval) ([Microsoft Learn][10]); Ragas docs & quickstart ([Ragas][11]); TruLens docs/pyPI (eval + instrumentation) ([TruLens][12], [PyPI][13]); Langfuse observability overview (token & cost tracking) ([Langfuse][14]).
+
+   **References:** Azure RAG evaluators (groundedness, retrieval) ([Microsoft Learn][10]); Ragas docs & quickstart ([Ragas][11]); TruLens docs/pyPI (eval + instrumentation) ([TruLens][12], [PyPI][13]); Langfuse observability overview (token & cost tracking) ([Langfuse][14]).
 
 ---
 
@@ -43,21 +47,25 @@
 
 * Implement **hybrid search**, **semantic reranking**, metadata filters; test chunking strategies.
 * Work through a short course on **advanced RAG** and apply at least two improvements.
+
   **References:** Advanced RAG (DeepLearning.AI) ([DeepLearning.ai][15], [DeepLearning.AI - Learning Platform][16]); Azure vector query how-to + SDK samples (reranking & filtering patterns) ([Microsoft Learn][17], [GitHub][18]).
 
 ### Week 6 — Architect for Scale, Latency & Cost
 
 * Rate limiting & **backpressure**, circuit breakers, request coalescing; **Provisioned Throughput Units (PTU)** vs on-demand; quota planning and SLOs.
+
   **References:** Azure OpenAI architecture best practices (Well-Architected) ([Microsoft Learn][19]); quota & limits and management guides ([Microsoft Learn][20]); PTU concepts & costing (Foundry) ([Microsoft Learn][21]); OpenAI production tips ([OpenAI Platform][3]).
 
 ### Week 7 — Security, Safety & Governance
 
 * Threat-model your app with **OWASP LLM Top 10**; add **Content Safety** (user input & model output); configure PII detection and **prompt shields**.
+
   **References:** OWASP LLM Top 10 (official) ([OWASP Foundation][22]); Azure AI Content Safety overview & docs (guardrails, groundedness detection) ([Microsoft Learn][23]); Azure OpenAI data privacy (enterprise posture) ([Microsoft Learn][24]).
 
 ### Week 8 — Observability Deep-Dive
 
 * Standardize traces/metrics with **OpenTelemetry GenAI** semantics; centralize traces (Langfuse or equivalent), track **latency, costs, eval scores**; create dashboards & budgets.
+
   **References:** OTel GenAI semantic conventions & concepts ([OpenTelemetry][25]); Langfuse OSS (observability & self-host) ([GitHub][26], [Langfuse][27]).
 
 ---
@@ -67,6 +75,7 @@
 ### Week 9 — Agentic Patterns (When & Why)
 
 * Study **Azure agent orchestration patterns** (sequential, concurrent, group, handoff) and decide where agents add value over plain RAG.
+
   **References:** Azure Architecture Center (agent patterns) & Learn module ([Microsoft Learn][28]).
 
 ### Week 10 — Build a Small Agent (Tool-Using)
