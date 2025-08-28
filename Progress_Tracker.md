@@ -5,63 +5,80 @@ Use this file to track your **weekly learning progress** across the 1-year sylla
 You can mark tasks as ✅ (done), 🚧 (in progress), or ⏳ (pending).  
 
 ---
+## ✅ Usage
 
-## ✅ Legend
+* Mark each week when complete.
+* Capture notes, blockers, or design decisions in a separate log.
+
 - ⏳ Not Started  
 - 🚧 In Progress  
-- ✅ Completed  
+- ✅ Completed
+- 
+---
+
+## 📅 Weeks 0–4 — Foundations
+
+| Week | Focus                                 | Deliverable                                   | Done |
+| ---- | ------------------------------------- | --------------------------------------------- | ---- |
+| 0    | Environment setup (.NET, Azure, SDKs) | Local dev environment ready                   |⏳    |
+| 1    | ML/LLM overview for architects        | One-page ML/LLM intuition summary             |⏳    |
+| 2    | LLM system patterns & risks           | Checklist (prod patterns + OWASP LLM Top-10)  |⏳    |
+| 3    | Prompting, tokens, cost/latency       | Prompt experiments + token budget analysis    |⏳    |
+| 4    | First .NET AI app (console/chat)      | Console chatbot using Microsoft.Extensions.AI |⏳    |
 
 ---
 
-## 📅 Weekly Progress
+## 📅 Weeks 5–8 — Retrieval & RAG
 
-| Week | Topic | Status | Notes |
-|------|-------|--------|-------|
-| 1 | Math & Linear Algebra Refresh | ⏳ | |
-| 2 | Probability & Statistics | ⏳ | |
-| 3 | Calculus & Optimization Basics | ⏳ | |
-| 4 | Python for AI (Fast Refresh) | ⏳ | |
-| 5 | ML Fundamentals (Supervised) | ⏳ | |
-| 6 | ML Fundamentals (Unsupervised) | ⏳ | |
-| 7 | ML Pipeline + Azure ML Basics | ⏳ | |
-| 8 | Deep Learning (NNs, Backprop) | ⏳ | |
-| 9 | CNNs & Transfer Learning | ⏳ | |
-| 10 | NLP Foundations | ⏳ | |
-| 11 | Transformers & LLM Basics | ⏳ | |
-| 12 | GenAI Applications (Chatbots, Summarizers) | ⏳ | |
-| 13 | Azure Cognitive Services (NLP/Computer Vision) | ⏳ | |
-| 14 | OpenAI APIs (GPT, Embeddings) | ⏳ | |
-| 15 | Azure OpenAI Integration | ⏳ | |
-| 16 | Vector Databases (Pinecone, FAISS) | ⏳ | |
-| 17 | RAG Architectures | ⏳ | |
-| 18 | Prompt Engineering | ⏳ | |
-| 19 | Fine-tuning LLMs | ⏳ | |
-| 20 | MLOps Overview | ⏳ | |
-| 21 | MLflow & DVC | ⏳ | |
-| 22 | CI/CD for ML | ⏳ | |
-| 23 | Model Monitoring & Drift | ⏳ | |
-| 24 | Responsible AI & Governance | ⏳ | |
-| 25 | AI Solution Architecture Patterns | ⏳ | |
-| 26 | AI + Microservices | ⏳ | |
-| 27 | AI in Event-driven Systems | ⏳ | |
-| 28 | AI in Enterprise Systems (ERP/CRM/Custom Apps) | ⏳ | |
-| 29 | Case Study: AI in Finance | ⏳ | |
-| 30 | Case Study: AI in Healthcare | ⏳ | |
-| 31 | Case Study: AI in Retail | ⏳ | |
-| 32 | Case Study: AI in Manufacturing | ⏳ | |
-| 33 | Review: NLP & GenAI | ⏳ | |
-| 34 | Review: MLOps | ⏳ | |
-| 35 | Review: Azure AI Services | ⏳ | |
-| 36 | Review: AI Governance | ⏳ | |
-| 37–40 | Capstone Project (AI-Integrated App) | ⏳ | |
-| 41–44 | Capstone Project (MLOps Pipeline) | ⏳ | |
-| 45–48 | Capstone Project (Governance & Responsible AI) | ⏳ | |
-| 49–52 | Final Review + Portfolio Build | ⏳ | |
+| Week | Focus                             | Deliverable                            | Done |
+| ---- | --------------------------------- | -------------------------------------- | ---- |
+| 5    | RAG mental model                  | Self-drawn RAG pipeline diagram        | ☐    |
+| 6    | Azure AI Search (vector + hybrid) | Working demo with hybrid search        | ☐    |
+| 7    | Chunking & embedding quality      | Retrieval metrics logged (recall/nDCG) | ☐    |
+| 8    | RAG API in .NET                   | Minimal API `/ask` endpoint            | ☐    |
 
 ---
 
-## 📝 How to Use
-- Update this file weekly.  
-- Add **Notes** about what you learned, roadblocks, or links to repos.  
-- At the end of the year, you’ll have a **learning log + portfolio history**.
+## 📅 Weeks 9–12 — Evaluation, Security & Observability
 
+| Week | Focus                                     | Deliverable                                    | Done |
+| ---- | ----------------------------------------- | ---------------------------------------------- | ---- |
+| 9    | Classical evals refresher                 | Error analysis on small dataset                | ☐    |
+| 10   | LLM/RAG evaluation                        | Add Ragas/TruLens evals to API                 | ☐    |
+| 11   | Security & abuse prevention               | Guardrails + prompt injection mitigations      | ☐    |
+| 12   | Prod readiness (cost/latency/reliability) | Policies applied (streaming, retries, caching) | ☐    |
+
+---
+
+## 📅 Weeks 13–16 — Orchestration, Data & Governance
+
+| Week | Focus                       | Deliverable                                  | Done |
+| ---- | --------------------------- | -------------------------------------------- | ---- |
+| 13   | Orchestration options       | Thin façade with provider swap               | ☐    |
+| 14   | Data pipelines for RAG      | Ingestion pipeline (OCR/cleanup/PII removal) | ☐    |
+| 15   | MLOps mindset               | CI/CD + monitoring sketch for AI feature     | ☐    |
+| 16   | Governance & responsible AI | Checklist (runbooks, DR, cost, PII policies) | ☐    |
+
+---
+
+## 📅 Weeks 17–20 — Capstone
+
+| Week | Focus                  | Deliverable                         | Done |
+| ---- | ---------------------- | ----------------------------------- | ---- |
+| 17   | Capstone design doc    | Scenario choice + KPI definitions   | ☐    |
+| 18   | Capstone build         | Core system implemented             | ☐    |
+| 19   | Hardening & load tests | Red-team results + load test report | ☐    |
+| 20   | Launch & docs          | User guide + on-call playbook       | ☐    |
+
+---
+
+## 📦 Capstone Options
+
+* Enterprise RAG service (retrieval + evals)
+* Internal AI assistant (summaries, updates)
+* Multi-agent planner/worker system
+* AI DevOps bot (CI/CD assistant)
+
+---
+
+> Keep each week’s output small but production-oriented — **architecture checklists, runnable demos, and logged metrics** are more valuable than lengthy notes.
